@@ -5,7 +5,7 @@
 font
 --------------------------------------
 */
-@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://webfontworld.github.io/pretendard/Pretendard.css');
 /*
@@ -29,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     /* font-size: 0.8rem; */
-    font-family: 'Jeju Myeongjo', serif;
+    font-family: 'Noto Serif KR', serif;
     font-weight: normal;
     color: #333333;
     line-height: 1;

@@ -1,10 +1,24 @@
 @use 'common';
 
 // * {
-//     outline: 1px solid #ff0;
+//     outline: 1px solid #f00;
 // }
 
 /* font-face 적용 실패.. */
+.csp {
+    padding: 100px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 40px;
+        margin: 0 0 30px 0;
+    }
+
+    p {
+        font-size: 17px;
+        margin: 0 0 15px 0;
+    }
+}
 
 .eng {
     font-family: 'Lora', serif;
@@ -14,12 +28,18 @@
     font-family: 'Pretendard';
 }
 
+.hInner {
+    width: 1860px;
+    margin: 0 auto;
+}
+
 .inner {
-    width: 1400px;
+    width: 1370px;
     margin: 0 auto;
 }
 
 .Header {
+    position: relative;
     line-height: 100px;
 
     .TopBanner {
@@ -29,10 +49,10 @@
         font-size: 14px;
         font-weight: 300;
         text-align: center;
-        line-height: 35px;
+        line-height: 40px;
 
 
-        .inner {
+        .hInner {
 
 
             p {
@@ -50,7 +70,7 @@
         button {
             position: absolute;
             top: 50%;
-            right: calc(50% - 700px);
+            right: calc(50% - 935px);
             transform: translateY(-40%);
             border: inherit;
             background: inherit;
@@ -61,8 +81,106 @@
     }
 
     .gnb {
-        h1 {
-            width: 200px;
+        // position: absolute;
+        // top: 40px;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // color: common.$wColor;
+        // z-index: 9999;
+
+        .hInner {
+            display: flex;
+            justify-content: space-between;
+
+
+            h1 {
+                font-size: 0;
+
+                a {
+                    display: inline-block;
+                    font-size: 0;
+                    width: 200px;
+                    height: 21px;
+                    background: url(../../public/assets/img/logo-g.png) no-repeat center center/cover;
+                    vertical-align: middle;
+
+                }
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    gap: 40px;
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+            }
+
+            .service {
+                display: flex;
+                gap: 30px;
+                font-size: 25px;
+                color: common.$mainColor;
+
+            }
+        }
+
+
+    }
+
+}
+
+.MainVisual {
+    .itm {
+        height: calc(100vh - 142px);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.itm01 {
+            background-image: url(../../public/assets/img/main01.jpg);
+        }
+
+        &.itm02 {
+            background-image: url(../../public/assets/img/main02.jpg);
+        }
+
+        &.itm03 {
+            background-image: url(../../public/assets/img/main03.jpg);
+        }
+    }
+}
+
+.Iconic {
+    .ico {
+        position: relative;
+        width: 427px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &.ico01 {
+            background-image: url(../../public/assets/img/ico01.png);
+        }
+
+        &.ico02 {
+            background-image: url(../../public/assets/img/ico02.png);
+        }
+
+        &.ico03 {
+            background-image: url(../../public/assets/img/ico03.png);
+        }
+
+        &.ico04 {
+            background-image: url(../../public/assets/img/ico04.png);
+        }
+
+        a {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
