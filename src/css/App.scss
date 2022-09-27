@@ -1,0 +1,68 @@
+@use 'common';
+
+// * {
+//     outline: 1px solid #ff0;
+// }
+
+/* font-face 적용 실패.. */
+
+.eng {
+    font-family: 'Lora', serif;
+}
+
+.gothic {
+    font-family: 'Pretendard';
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.Header {
+    line-height: 100px;
+
+    .TopBanner {
+        position: relative;
+        background: common.$mainColor;
+        color: common.$wColor;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 35px;
+
+
+        .inner {
+
+
+            p {
+                display: inline-block;
+            }
+
+            a {
+                padding: 0 15px;
+                // vertical-align: middle;
+                text-decoration: underline;
+
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            right: calc(50% - 700px);
+            transform: translateY(-40%);
+            border: inherit;
+            background: inherit;
+            font-size: 16px;
+            color: common.$wColor;
+        }
+
+    }
+
+    .gnb {
+        h1 {
+            width: 200px;
+        }
+    }
+}
