@@ -1,0 +1,16 @@
+@use 'common';
+
+.ShopList {
+
+
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .box {
+        max-width: 320px;
+        margin: 0 0 20px 0;
+    }
+}

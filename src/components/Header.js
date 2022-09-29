@@ -5,7 +5,7 @@ import { HiOutlineUser, HiOutlineHeart, HiOutlineShoppingBag } from "react-icons
 import TopBanner from './TopBanner';
 import Nav from './Nav';
 
-const Header = () => {
+const Header = ({ PRODUCT }) => {
     return (
         <header className="Header">
             <TopBanner />
@@ -17,7 +17,7 @@ const Header = () => {
                         </Link>
                     </h1>
                     <nav>
-                        <Nav />
+                        <Nav PRODUCT={PRODUCT} />
                     </nav>
                     <ul className='service'>
                         <li><HiOutlineUser /></li>

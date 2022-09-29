@@ -1,2 +1,54 @@
 $mainColor : #9B806D;
 $wColor : #fff;
+
+// * {
+//     outline: 1px solid #f00;
+// }
+
+.Wrapper {
+    overflow-x: hidden;
+}
+
+/* font-face 적용 실패.. */
+.csp {
+    padding: 100px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 40px;
+        margin: 0 0 30px 0;
+    }
+
+    p {
+        font-size: 17px;
+        margin: 0 0 15px 0;
+    }
+}
+
+.eng {
+    font-family: 'Lora', serif;
+}
+
+.gothic {
+    font-family: 'Pretendard';
+}
+
+.hInner {
+    width: 1860px;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 1370px;
+    margin: 0 auto;
+}
+
+.collection {
+    font-size: 13px;
+    margin: 0 0 10px 0;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 500;
+}

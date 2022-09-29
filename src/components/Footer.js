@@ -59,16 +59,18 @@ const FOOTDATA = [
 
 const Footer = () => {
     return (
-        <footer className="Footer gothic">
+        <footer className="Footer">
             <ul className="inner">
                 {
-                    FOOTDATA.map(
-                        (el, idx) => (<li key={el.id}>
+                    FOOTDATA.map((el, idx) => (
+                        <li key={el.id}>
                             <a href={el.alink} className="fTit">{el.title}</a>
-                            <ul className="fSub">
+                            <ul className="fSub" >
                                 {
-                                    el.submenu.map(
-                                        smenu => (<li key={el.sid}><a href={smenu.slink}>{smenu.stitle}</a></li>)
+                                    el.submenu.map(smenu => (
+                                        <li key={el.sid}>
+                                            <a href={smenu.slink}>{smenu.stitle}</a>
+                                        </li>)
                                     )
                                 }
                             </ul>
