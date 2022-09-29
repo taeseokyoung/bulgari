@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import { ICONIC } from "../data/common";
+
+import { ICONIC, COLLECTION } from "../data/common";
 import MainVisual from '../components/MainVisual';
 
 
@@ -9,25 +10,78 @@ const Main = () => {
     return (
         <main>
             <MainVisual />
-            <section className='Iconic inner csp'>
-                <p>시대의 아이콘, 불가리</p>
-                <h2 className='eng'>BULGARI ICON</h2>
+            <section className='Iconic csp'>
+                <div className="inner">
+                    <p>시대의 아이콘, 불가리</p>
+                    <h2 className='eng'>BULGARI ICON</h2>
+                    <Slider
+                        slidesToShow={4}>
+                        {
+                            ICONIC.map((el, idx) => {
+                                return (
+                                    <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={el.link}>
+                                        {el.title}
+                                    </Link></figure>
+                                )
+                            })
+                        }
 
-                <Slider
-                    slidesToShow={4}>
-                    {
-                        ICONIC.map((el, idx) => {
-                            return (
-                                <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={el.link}>
-                                    {el.title}
-                                </Link></figure>
-                            )
-                        })
-                    }
-
-                </Slider>
+                    </Slider>
+                </div>
             </section>
-        </main>
+            <section className='Collection csp'>
+                <div className="txt inner">
+                    <p>컬렉션</p>
+                    <h2 className='eng'>COLLECTION</h2>
+                </div>
+                <div className="cSlide inner">
+                    <div className="left">
+                        {/* <Slider
+                            arrows={false}>
+                            <figure className='col01'></figure>
+                            <figure className='col02'></figure>
+                            <figure className='col03'></figure>
+                        </Slider> */}
+                        <Slider
+                            arrows={false}>
+                            {
+                                COLLECTION.map((el, idx) => {
+                                    return (
+                                        <figure className={`col0${idx + 1}`}>
+                                            <div className="box">
+                                                <strong>{el.title}</strong>
+                                                <p>{el.des}</p>
+                                                <button>{el.button}</button>
+                                            </div>
+                                        </figure>
+                                    )
+                                })
+                            }
+                        </Slider>
+                    </div>
+                    <div className="right">
+                        <Slider
+                            arrows={false}
+                            slidesToShow={2}
+                            slidesToScroll={2}
+                            rows={2}>
+                            <figure className='bz01'></figure>
+                            <figure className='bz02'></figure>
+                            <figure className='bz03'></figure>
+                            <figure className='bz04'></figure>
+                            <figure className='se01'></figure>
+                            <figure className='se02'></figure>
+                            <figure className='se03'></figure>
+                            <figure className='se04'></figure>
+                            <figure className='diva01'></figure>
+                            <figure className='diva02'></figure>
+                            <figure className='diva03'></figure>
+                            <figure className='diva04'></figure>
+                        </Slider>
+                    </div>
+                </div>
+            </section>
+        </main >
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import { HiOutlineUser, HiOutlineHeart, HiOutlineShoppingBag } from "react-icons/hi";
 
 import TopBanner from './TopBanner';
@@ -12,9 +12,9 @@ const Header = () => {
             <div className="gnb">
                 <div className="hInner">
                     <h1 className='on'>
-                        <a href="/">
+                        <Link to="/">
 
-                        </a>
+                        </Link>
                     </h1>
                     <nav>
                         <Nav />

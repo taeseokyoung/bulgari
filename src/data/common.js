@@ -9,4 +9,10 @@ const ICONIC = [
     { id: 4, title: "워치", link: "/" },
 ]
 
-export { ICONIC }
+const COLLECTION = [
+    { id: 1, title: "BZero1", des: "경이로움이 깃든 무한한 나선", button: "비제로원 컬렉션 더보기", link: "" },
+    { id: 2, title: "Serpenti", des: "화려함과 관능의 아이콘", button: "세르펜티 컬렉션 더보기", link: "" },
+    { id: 3, title: "Divas'Dream", des: "진정한 디바의 인생", button: "디바스드림 컬렉션 더보기", link: "" },
+]
+
+export { ICONIC, COLLECTION }

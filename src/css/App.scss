@@ -4,6 +4,10 @@
 //     outline: 1px solid #f00;
 // }
 
+.Wrapper {
+    overflow-x: hidden;
+}
+
 /* font-face 적용 실패.. */
 .csp {
     padding: 100px 0;
@@ -182,5 +186,183 @@
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+}
+
+.Collection {
+    background: rgba($color: common.$mainColor, $alpha: 0.1);
+    height: 970px;
+
+    .cSlide {
+        position: relative;
+
+        .left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 670px;
+
+            figure {
+                position: relative;
+                width: 670px;
+                height: 670px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                .box {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+
+                    strong {
+                        display: inline-block;
+                        font-size: 21px;
+                        margin: 0 0 10px 0;
+                    }
+
+                    p {
+                        max-height: 400px;
+                        line-height: 1.45;
+                        font-size: 40px;
+                        // white-space: pre-wrap;
+                        margin: 0 0 50px 0;
+                        white-space: pre-line;
+                        word-break: keep-all;
+                    }
+
+                    button {
+                        border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+                        background: inherit;
+                        color: #fff;
+                        padding: 5px 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .col01 {
+                background: url(../../public/assets/img/collection01.png);
+            }
+
+            .col02 {
+                background: url(../../public/assets/img/collection02.png);
+            }
+
+            .col03 {
+                background: url(../../public/assets/img/collection03.png);
+            }
+        }
+
+        .right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 670px;
+            height: 670px;
+
+            .slick-slide {
+                padding: 0 15px;
+            }
+
+            .slick-list {
+                margin: 0 -15px;
+            }
+
+            figure {
+                width: 320px;
+                height: 320px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-color: #fff;
+            }
+        }
+
+        .bz01 {
+            margin: 0 0 30px 0;
+            background: url(../../public/assets/img/bz01.png);
+        }
+
+        .bz02 {
+            background: url(../../public/assets/img/bz03.png);
+        }
+
+        .bz03 {
+            margin: 0 0 30px 0;
+            background: url(../../public/assets/img/bz04.png);
+        }
+
+        .bz04 {
+            background: url(../../public/assets/img/bz02.png);
+        }
+
+        .se01 {
+            margin: 0 0 30px 0;
+            background: url(../../public/assets/img/se01.png);
+        }
+
+        .se02 {
+            background: url(../../public/assets/img/se02.png);
+        }
+
+        .se03 {
+            margin: 0 0 30px 0;
+            background: url(../../public/assets/img/se03.png);
+        }
+
+        .se04 {
+            background: url(../../public/assets/img/se04.png);
+        }
+
+        .diva01 {
+            margin: 0 0 30px 0;
+            background: url(../../public/assets/img/diva01.png);
+        }
+
+        .diva02 {
+            background: url(../../public/assets/img/diva02.png);
+        }
+
+        .diva03 {
+            margin: 0 0 30px 0;
+            background: url(../../public/assets/img/diva03.png);
+        }
+
+        .diva04 {
+            background: url(../../public/assets/img/diva04.png);
+        }
+    }
+
+}
+
+
+.Footer {
+    background: common.$mainColor;
+    padding: 70px 0 140px 0;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.45;
+        padding: 0 0 100px 0;
+
+        .fTit {
+            font-size: 17px;
+            color: #fff;
+        }
+
+        .fSub {
+            font-size: 15px;
+            margin: 10px 0 0 0;
+            color: #dddddd;
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid rgba($color: #dddddd, $alpha: 0.5);
+        border-bottom: 1px solid rgba($color: #dddddd, $alpha: 0.5);
     }
 }
