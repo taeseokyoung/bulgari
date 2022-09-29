@@ -21,8 +21,8 @@ const Nav = ({ PRODUCT }) => {
             <li><Link to='/wedding'>인게이지먼트 & 웨딩</Link></li>
             <li><Link to='/acc'>워치</Link></li>
             <li><Link to='/bag'>핸드백</Link></li>
-            <li><Link to='/perfume'>향수</Link></li> */}
-            <li><Link to='/gift'>기프트</Link></li>
+            <li><Link to='/perfume'>향수</Link></li>
+            <li><Link to='/gift'>기프트</Link></li> */}
         </ul>
     )
 }

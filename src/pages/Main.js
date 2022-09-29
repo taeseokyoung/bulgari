@@ -19,7 +19,8 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                                 return (
                                     <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={el.link}>
                                         {el.title}
-                                    </Link></figure>
+                                    </Link>
+                                    </figure>
                                 )
                             })
                         }
@@ -87,7 +88,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                         PRODUCT.map(el => {
                             return (
                                 <figure key={el.id}>
-                                    <Link to={'/jewelry/' + el.id}>
+                                    <Link to={'/List/' + el.id}>
                                         <div className="box">
                                             <img src={process.env.PUBLIC_URL + el.src} alt="" />
                                         </div>

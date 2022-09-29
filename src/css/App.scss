@@ -153,7 +153,7 @@
 
 .Collection {
     background: rgba($color: common.$mainColor, $alpha: 0.1);
-    height: 970px;
+    height: 1000px;
 
     .cSlide {
         position: relative;
@@ -300,6 +300,224 @@
 
 }
 
+
+.HighJewelry {
+
+    .high01 {
+        background: url(../../public/assets/img/high01.jpg) no-repeat center center/cover;
+        height: 50vh;
+    }
+
+    .hsp {
+        padding: 100px 0;
+        text-align: center;
+
+        h2 {
+            font-size: 40px;
+            margin: 0 0 30px 0;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .inner {
+
+        strong {
+            font-size: 17px;
+            display: inline-block;
+            margin: 0 0 15px 0;
+        }
+
+        p {
+            line-height: 1.45;
+            // white-space: pre-line;
+            // word-break: keep-all;
+
+        }
+
+
+        .pic01 {
+            display: flex;
+
+            .high02 {
+                flex: 1;
+                // flex: 2;
+                width: 100%;
+                height: 670px;
+                background: url(../../public/assets/img/high02.jpg) no-repeat center center/cover;
+
+            }
+
+            .high03 {
+                flex: 1;
+                width: 100%;
+                height: 670px;
+                background: url(../../public/assets/img/high03.jpg) no-repeat center center/cover;
+
+            }
+        }
+
+        .eden {
+            display: flex;
+
+            .eden01 {
+                margin: 0 0 0 90px;
+                width: 500px;
+                height: 370px;
+                background: url(../../public/assets/img/eden01.jpg) no-repeat center center/cover;
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: 0 0 0 90px;
+            }
+        }
+
+        .eden2 {
+            display: flex;
+
+            .eden02 {
+                margin: 0 30px 0 0;
+                width: 600px;
+                height: 770px;
+                background: url(../../public/assets/img/eden02.jpg) no-repeat center center/cover;
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: 0 0 0 90px;
+            }
+        }
+    }
+
+}
+
+.History {
+
+    .history01 {
+        background: url(../../public/assets/img/history01.jpg) no-repeat center center/cover;
+        height: 50vh;
+    }
+
+    .hsp {
+        padding: 100px 0;
+        text-align: center;
+
+        h2 {
+            font-size: 40px;
+            margin: 0 0 30px 0;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .inner {
+        strong {
+            font-size: 17px;
+            display: inline-block;
+            margin: 0 0 15px 0;
+        }
+
+        p {
+            line-height: 1.45;
+            // white-space: pre-line;
+            // word-break: keep-all;
+
+        }
+    }
+
+    .history02 {
+
+        .pic {
+            display: flex;
+            gap: 30px;
+
+            figure {
+                width: 435px;
+                height: 435px;
+                margin: 0 0 30px 0;
+            }
+
+            .h01 {
+                background: url(../../public/assets/img/h01.jpg) no-repeat center center/cover;
+            }
+
+            .h02 {
+                background: url(../../public/assets/img/h02.jpg) no-repeat center center/cover;
+            }
+
+            .h03 {
+                background: url(../../public/assets/img/h03.jpg) no-repeat center center/cover;
+            }
+
+        }
+    }
+
+    .history03 {
+
+
+        .inner {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            figure {
+                width: 435px;
+                height: 435px;
+            }
+
+            .i01 {
+                background: url(../../public/assets/img/i01.jpg) no-repeat center center/cover;
+            }
+
+            .i02 {
+                background: url(../../public/assets/img/i02.jpg) no-repeat center center/cover;
+            }
+
+            .i03 {
+                background: url(../../public/assets/img/i03.jpg) no-repeat center center/cover;
+            }
+
+            .i04 {
+                background: url(../../public/assets/img/i04.jpg) no-repeat center center/cover;
+            }
+
+            .i05 {
+                background: url(../../public/assets/img/i05.jpg) no-repeat center center/cover;
+            }
+
+            .i06 {
+                background: url(../../public/assets/img/i06.jpg) no-repeat center center/cover;
+            }
+
+            p {
+                font-size: 17px;
+                margin: 15px 0 0 0;
+            }
+        }
+    }
+}
+
 .Footer {
     background: common.$mainColor;
     padding: 70px 0 140px 0;
@@ -308,7 +526,7 @@
         display: flex;
         justify-content: space-between;
         line-height: 1.45;
-        padding: 0 0 100px 0;
+        // padding: 100px 0;
 
         .fTit {
             font-size: 17px;
@@ -322,8 +540,8 @@
         }
     }
 
-    .bottom {
-        border-top: 1px solid rgba($color: #dddddd, $alpha: 0.5);
-        border-bottom: 1px solid rgba($color: #dddddd, $alpha: 0.5);
-    }
+    // .bottom {
+    //     border-top: 1px solid rgba($color: #dddddd, $alpha: 0.5);
+    //     border-bottom: 1px solid rgba($color: #dddddd, $alpha: 0.5);
+    // }
 }

@@ -78,9 +78,9 @@ const Footer = () => {
                     )
                 }
             </ul>
-            <div className="bottom">
+            {/* <div className="bottom">
                 &copy;
-            </div>
+            </div> */}
         </footer >
     )
 }

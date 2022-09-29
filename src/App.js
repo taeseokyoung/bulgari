@@ -10,7 +10,7 @@ import History from './pages/History';
 import HighJewelry from './pages/HighJewelry';
 import ProductList from './shop/ProductList';
 import Product from './shop/Product';
-import { ICONIC, COLLECTION, PRODUCT } from './data/common'
+import { HISTORY, ICONIC, COLLECTION, PRODUCT } from './data/common'
 
 
 
@@ -20,7 +20,7 @@ function App() {
       <Header PRODUCT={PRODUCT} />
       <Routes>
         <Route path='/' element={<Main ICONIC={ICONIC} COLLECTION={COLLECTION} PRODUCT={PRODUCT} />}></Route>
-        <Route path='/brand' element={<History />}></Route>
+        <Route path='/brand' element={<History HISTORY={HISTORY} />}></Route>
         <Route path='/highjewelry' element={<HighJewelry />}></Route>
         <Route path='/List/:cate' element={<ProductList PRODUCT={PRODUCT} />}></Route>
         <Route path='/List/:itm' element={<Product PRODUCT={PRODUCT} />}></Route>

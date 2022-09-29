@@ -11,7 +11,7 @@ const ProductList = ({ PRODUCT }) => {
                     cateList.map(el => {
                         return (
                             <figure key={el.id}>
-                                <Link to={'/jewelry/' + el.id}>
+                                <Link to={'/List/' + el.id}>
                                     <div className="box">
                                         <img src={process.env.PUBLIC_URL + el.src} alt="" />
                                     </div>
