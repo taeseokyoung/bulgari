@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const Product = ({ PRODUCT }) => {
     const { itm } = useParams();
-    const matchItm = PRODUCT.filter(it => itm === it.id);
+    const matchItm = PRODUCT.filter(it => Number(itm) === it.id);
 
     return (
         <section className='ShopItm csp'>

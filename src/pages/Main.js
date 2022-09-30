@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -5,6 +6,11 @@ import MainVisual from '../components/MainVisual';
 
 
 const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
+
+    const [sink, setSink] = useState();
+    useEffect(() => {
+        setSink(0)
+    }, [])
     return (
         <main>
             <MainVisual />
@@ -35,12 +41,6 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                 </div>
                 <div className="cSlide inner">
                     <div className="left">
-                        {/* <Slider
-                            arrows={false}>
-                            <figure className='col01'></figure>
-                            <figure className='col02'></figure>
-                            <figure className='col03'></figure>
-                        </Slider> */}
                         <Slider
                             autoplay={true}
                             arrows={false}>
