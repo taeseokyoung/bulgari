@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bulgari/static/css/main.1f406501.css",
-    "main.js": "/bulgari/static/js/main.fad6d2c8.js",
+    "main.js": "/bulgari/static/js/main.917d6931.js",
     "static/media/main03.jpg": "/bulgari/static/media/main03.ce5cf96dc3a88ce7f935.jpg",
     "static/media/main02.jpg": "/bulgari/static/media/main02.8ed04b26a0be77df3739.jpg",
     "static/media/collection02.png": "/bulgari/static/media/collection02.1322ddbb45e9399e3afc.png",
@@ -42,10 +42,10 @@
     "static/media/i05.jpg": "/bulgari/static/media/i05.829d52f7bae4cd846cf3.jpg",
     "index.html": "/bulgari/index.html",
     "main.1f406501.css.map": "/bulgari/static/css/main.1f406501.css.map",
-    "main.fad6d2c8.js.map": "/bulgari/static/js/main.fad6d2c8.js.map"
+    "main.917d6931.js.map": "/bulgari/static/js/main.917d6931.js.map"
   },
   "entrypoints": [
     "static/css/main.1f406501.css",
-    "static/js/main.fad6d2c8.js"
+    "static/js/main.917d6931.js"
   ]
 }
