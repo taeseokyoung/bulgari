@@ -2,7 +2,6 @@
 
 .ShopList {
 
-
     .inner {
         display: flex;
         flex-wrap: wrap;
@@ -12,5 +11,127 @@
     .box {
         max-width: 320px;
         margin: 0 0 20px 0;
+    }
+
+
+}
+
+.cate {
+    padding: 0 0 100px 0;
+
+    .category {
+        width: 1370px;
+        margin: 0 auto;
+        text-align: right;
+        line-height: 40px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        text-align: center;
+        line-height: 100px;
+        font-size: 21px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+        width: 1370px;
+        margin: 0 auto;
+        line-height: 40px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin: 0 auto 30px auto;
+        // 작업하면서 자꾸 통으로 왼쪽으로 가던것 해결가능!
+
+        .option li {
+            display: inline-block;
+
+            &~li::before {
+                content: "/";
+                padding: 0 0.5rem;
+            }
+        }
+
+        // .line {
+        //     position: relative;
+        //     flex: 1;
+        //     font-size: 0;
+
+        //     &::after {
+        //         content: "";
+        //         position: absolute;
+        //         top: 50%;
+        //         left: 50%;
+        //         transform: translate(-50%, -50%);
+        //         width: 80%;
+        //         height: 1px;
+        //         border-top: 1px dotted rgba($color: common.$mainColor, $alpha: 0.3);
+        //     }
+        // }
+    }
+}
+
+.ShopItm {
+
+    .inner {
+        display: flex;
+        gap: 30px;
+    }
+
+    .left {
+        img {
+            width: 670px;
+        }
+    }
+
+    .right {
+        text-align: left;
+        margin: auto 0 auto 10px;
+
+        .collection {
+            font-size: 19px;
+            margin: 0 0 20px 0;
+        }
+
+        .name {
+            font-size: 40px;
+            margin: 0 0 40px 0;
+        }
+
+        .des {
+            font-size: 21px;
+            line-height: 1.45;
+            min-height: 300px;
+        }
+
+        .buy {
+            button {
+                display: block;
+                border: inherit;
+                padding: 10px 30px;
+                color: #fff;
+                background: #333;
+            }
+
+            .up {
+                display: flex;
+                gap: 15px;
+                margin: 0 0 15px 0;
+
+                button {
+                    flex: 1;
+                }
+            }
+
+            .down {
+                button {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

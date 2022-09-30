@@ -23,7 +23,7 @@ function App() {
         <Route path='/brand' element={<History HISTORY={HISTORY} />}></Route>
         <Route path='/highjewelry' element={<HighJewelry />}></Route>
         <Route path='/List/:cate' element={<ProductList PRODUCT={PRODUCT} />}></Route>
-        <Route path='/List/:itm' element={<Product PRODUCT={PRODUCT} />}></Route>
+        <Route path='/Itm/:itm' element={<Product PRODUCT={PRODUCT} />}></Route>
       </Routes>
       <Footer />
     </Wrapper>

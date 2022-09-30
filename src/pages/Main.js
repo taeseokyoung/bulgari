@@ -42,6 +42,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                             <figure className='col03'></figure>
                         </Slider> */}
                         <Slider
+                            autoplay={true}
                             arrows={false}>
                             {
                                 COLLECTION.map((el, idx) => {
@@ -60,6 +61,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                     </div>
                     <div className="right">
                         <Slider
+                            autoplay={true}
                             arrows={false}
                             slidesToShow={2}
                             slidesToScroll={2}
@@ -88,7 +90,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                         PRODUCT.map(el => {
                             return (
                                 <figure key={el.id}>
-                                    <Link to={'/List/' + el.id}>
+                                    <Link to={'/Itm/' + el.id}>
                                         <div className="box">
                                             <img src={process.env.PUBLIC_URL + el.src} alt="" />
                                         </div>

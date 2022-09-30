@@ -3,20 +3,61 @@ import { Link, useParams } from 'react-router-dom';
 
 const Product = ({ PRODUCT }) => {
     const { itm } = useParams();
-    const matchItm = PRODUCT.filter(it => itm === it.id)
+    const matchItm = PRODUCT.filter(it => itm === it.id);
 
     return (
-        <section className='ShopList csp'>
+        <section className='ShopItm csp'>
             <div className="inner">
-                <figure key={matchItm.id}>
-                    <Link to={'/List/' + matchItm.id}>
-                        <div className="box">
-                            <img src={process.env.PUBLIC_URL + matchItm.src} alt="" />
-                        </div>
-                        <div className="collection">{matchItm.collection}</div>
-                        <div className="name">{matchItm.name}</div>
-                    </Link>
+                {/* <figure className={`left detail0${idx + 1}`}></figure> */}
+                <figure className='left'>
+                    {
+                        matchItm.map((img, idx) => {
+                            return (
+                                <img src={process.env.PUBLIC_URL + img.src} alt="" />
+                            )
+                        })
+                    }
                 </figure>
+                <div className="right">
+                    <div className="collection">
+                        {
+                            matchItm.map((col, idx) => {
+                                return (
+                                    col.collection
+                                )
+                            }
+                            )
+                        }
+                    </div>
+                    <div className="name">
+                        {
+                            matchItm.map((col, idx) => {
+                                return (
+                                    col.name
+                                )
+                            }
+                            )
+                        }</div>
+                    <div className="des">
+                        {
+                            matchItm.map((col, idx) => {
+                                return (
+                                    col.des
+                                )
+                            }
+                            )
+                        }
+                    </div>
+                    <div className="buy">
+                        <div className="up">
+                            <button>위시리스트</button>
+                            <button>쇼핑백에 담기</button>
+                        </div>
+                        <div className="down">
+                            <button>구매하기</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )
