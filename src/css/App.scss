@@ -226,11 +226,24 @@
             height: 670px;
 
             .slick-slide {
-                padding: 0 15px;
-            }
+                div {
 
-            .slick-list {
-                margin: 0 -15px;
+                    &:nth-child(1) {
+                        padding: 0 0 15px 0;
+
+                        // figure {
+                        //     &:nth-child(1) {
+                        //         margin: 0 15px;
+                        //     }
+
+                        // }
+                    }
+
+                    &:nth-child(2) {
+                        padding: 15px 0 0 0;
+                    }
+
+                }
             }
 
             figure {
@@ -244,7 +257,6 @@
         }
 
         .bz01 {
-            margin: 0 0 30px 0;
             background: url(../../public/assets/img/bz01.png);
         }
 
@@ -253,7 +265,7 @@
         }
 
         .bz03 {
-            margin: 0 0 30px 0;
+
             background: url(../../public/assets/img/bz04.png);
         }
 
@@ -262,7 +274,7 @@
         }
 
         .se01 {
-            margin: 0 0 30px 0;
+
             background: url(../../public/assets/img/se01.png);
         }
 
@@ -271,7 +283,7 @@
         }
 
         .se03 {
-            margin: 0 0 30px 0;
+
             background: url(../../public/assets/img/se03.png);
         }
 
@@ -280,7 +292,7 @@
         }
 
         .diva01 {
-            margin: 0 0 30px 0;
+
             background: url(../../public/assets/img/diva01.png);
         }
 
@@ -289,14 +301,30 @@
         }
 
         .diva03 {
-            margin: 0 0 30px 0;
+
             background: url(../../public/assets/img/diva03.png);
         }
 
         .diva04 {
             background: url(../../public/assets/img/diva04.png);
         }
+
+        // .arrows {
+        //     position: relative;
+        //     z-index: 999;
+
+        //     i {
+        //         position: absolute;
+        //         width: 48px;
+        //         height: 48px;
+
+        //         &.aleft {
+        //             background: url(../../public/assets/img/arrows.png);
+        //         }
+        //     }
+        // }
     }
+
 
 }
 

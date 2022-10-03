@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const Product = ({ PRODUCT }) => {
     const { itm } = useParams();
@@ -11,9 +11,9 @@ const Product = ({ PRODUCT }) => {
                 {/* <figure className={`left detail0${idx + 1}`}></figure> */}
                 <figure className='left'>
                     {
-                        matchItm.map((img, idx) => {
+                        matchItm.map((el, idx) => {
                             return (
-                                <img src={process.env.PUBLIC_URL + img.src} alt="" />
+                                <img src={process.env.PUBLIC_URL + el.src} alt="" />
                             )
                         })
                     }
@@ -21,9 +21,9 @@ const Product = ({ PRODUCT }) => {
                 <div className="right">
                     <div className="collection">
                         {
-                            matchItm.map((col, idx) => {
+                            matchItm.map((el, idx) => {
                                 return (
-                                    col.collection
+                                    el.collection
                                 )
                             }
                             )
@@ -31,21 +31,30 @@ const Product = ({ PRODUCT }) => {
                     </div>
                     <div className="name">
                         {
-                            matchItm.map((col, idx) => {
+                            matchItm.map((el, idx) => {
                                 return (
-                                    col.name
+                                    el.name
                                 )
                             }
                             )
                         }</div>
                     <div className="des">
                         {
-                            matchItm.map((col, idx) => {
+                            matchItm.map((el, idx) => {
                                 return (
-                                    col.des
+                                    el.des
                                 )
                             }
                             )
+                        }
+                    </div>
+                    <div className="price">
+                        {
+                            matchItm.map((el, idx) => {
+                                return (
+                                    <span>{el.price.toLocaleString()} {el.price ? "원" : "문의하기"}</span>
+                                )
+                            })
                         }
                     </div>
                     <div className="buy">

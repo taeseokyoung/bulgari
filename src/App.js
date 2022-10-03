@@ -10,6 +10,7 @@ import History from './pages/History';
 import HighJewelry from './pages/HighJewelry';
 import ProductList from './shop/ProductList';
 import Product from './shop/Product';
+import TypeList from './shop/TypeList';
 import { HISTORY, ICONIC, COLLECTION, PRODUCT } from './data/common'
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/brand' element={<History HISTORY={HISTORY} />}></Route>
         <Route path='/highjewelry' element={<HighJewelry />}></Route>
         <Route path='/List/:cate' element={<ProductList PRODUCT={PRODUCT} />}></Route>
+        <Route path='/Type/:type' element={<TypeList PRODUCT={PRODUCT} />}></Route>
         <Route path='/Itm/:itm' element={<Product PRODUCT={PRODUCT} />}></Route>
       </Routes>
       <Footer />

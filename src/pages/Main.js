@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState, useParams } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,11 +6,22 @@ import MainVisual from '../components/MainVisual';
 
 
 const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
+    const LS = useRef();
+    const RS = useRef();
 
-    const [sink, setSink] = useState();
+    const [LSS, setLSS] = useState();
+    const [RSS, setRSS] = useState();
+
     useEffect(() => {
-        setSink(0)
+        setLSS(LS.current);
+        setRSS(RS.current);
     }, [])
+
+    const TYPE = [ICONIC, PRODUCT]
+    const IconT = ICONIC.title
+    const ProT = PRODUCT.type
+    const typeList = TYPE.filter(IconT === ProT)
+
     return (
         <main>
             <MainVisual />
@@ -19,12 +30,13 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                     <p>시대의 아이콘, 불가리</p>
                     <h2 className='eng'>BULGARI ICON</h2>
                     <Slider
+                        // autoplay={false}
                         slidesToShow={5}>
                         {
-                            ICONIC.map((el, idx) => {
+                            typeList.map((el, idx) => {
                                 return (
-                                    <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={el.link}>
-                                        {el.title}
+                                    <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={'/Type/' + el.type}>
+                                        {el.type}
                                     </Link>
                                     </figure>
                                 )
@@ -42,7 +54,8 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                 <div className="cSlide inner">
                     <div className="left">
                         <Slider
-                            autoplay={true}
+                            ref={LS}
+                            asNavFor={RSS}
                             arrows={false}>
                             {
                                 COLLECTION.map((el, idx) => {
@@ -61,10 +74,10 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                     </div>
                     <div className="right">
                         <Slider
-                            autoplay={true}
+                            ref={RS}
+                            asNavFor={LSS}
                             arrows={false}
-                            slidesToShow={2}
-                            slidesToScroll={2}
+                            slidesPerRow={2}
                             rows={2}>
                             <figure className='bz01'></figure>
                             <figure className='bz02'></figure>
@@ -80,6 +93,10 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                             <figure className='diva04'></figure>
                         </Slider>
                     </div>
+                    {/* <div className="arrows">
+                        <i className='aleft' onClick={() => LS.current.slickPrev()}></i>
+                        <i className='aright' onClick={() => LS.current.slickNext()}></i>
+                    </div> */}
                 </div>
             </section>
             <section className='ShopList csp'>
