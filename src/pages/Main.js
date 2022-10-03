@@ -17,10 +17,10 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
         setRSS(RS.current);
     }, [])
 
-    const TYPE = [ICONIC, PRODUCT]
-    const IconT = ICONIC.title
-    const ProT = PRODUCT.type
-    const typeList = TYPE.filter(IconT === ProT)
+    // const TYPE = [ICONIC, PRODUCT]
+    // const IconT = ICONIC.title
+    // const ProT = PRODUCT.type
+    // const typeList = TYPE.filter(IconT === ProT)
 
     return (
         <main>
@@ -33,9 +33,9 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                         // autoplay={false}
                         slidesToShow={5}>
                         {
-                            typeList.map((el, idx) => {
+                            ICONIC.map((el, idx) => {
                                 return (
-                                    <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={'/Type/' + el.type}>
+                                    <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={'/Type/'}>
                                         {el.type}
                                     </Link>
                                     </figure>
