@@ -36,7 +36,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                             ICONIC.map((el, idx) => {
                                 return (
                                     <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={'/Type/'}>
-                                        {el.type}
+                                        {el.title}
                                     </Link>
                                     </figure>
                                 )
@@ -54,6 +54,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                 <div className="cSlide inner">
                     <div className="left">
                         <Slider
+                            autoplay={true}
                             ref={LS}
                             asNavFor={RSS}
                             arrows={false}>
@@ -75,22 +76,47 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                     <div className="right">
                         <Slider
                             ref={RS}
+                            autoplay={true}
                             asNavFor={LSS}
                             arrows={false}
                             slidesPerRow={2}
                             rows={2}>
-                            <figure className='bz01'></figure>
-                            <figure className='bz02'></figure>
-                            <figure className='bz03'></figure>
-                            <figure className='bz04'></figure>
-                            <figure className='se01'></figure>
-                            <figure className='se02'></figure>
-                            <figure className='se03'></figure>
-                            <figure className='se04'></figure>
-                            <figure className='diva01'></figure>
-                            <figure className='diva02'></figure>
-                            <figure className='diva03'></figure>
-                            <figure className='diva04'></figure>
+                            <figure className='bz01'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/bz01.png'} alt="" />
+                            </figure>
+                            <figure className='bz02'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/bz02.png'} alt="" />
+                            </figure>
+                            <figure className='bz03'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/bz03.png'} alt="" />
+                            </figure>
+                            <figure className='bz04'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/bz04.png'} alt="" />
+                            </figure>
+                            <figure className='se01'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/se01.png'} alt="" />
+                            </figure>
+                            <figure className='se02'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/se02.png'} alt="" />
+                            </figure>
+                            <figure className='se03'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/se03.png'} alt="" />
+                            </figure>
+                            <figure className='se04'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/se04.png'} alt="" />
+                            </figure>
+                            <figure className='diva01'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/diva01.png'} alt="" />
+                            </figure>
+                            <figure className='diva02'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/diva02.png'} alt="" />
+                            </figure>
+                            <figure className='diva03'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/diva03.png'} alt="" />
+                            </figure>
+                            <figure className='diva04'>
+                                <img src={process.env.PUBLIC_URL + '/assets/img/diva04.png'} alt="" />
+                            </figure>
                         </Slider>
                     </div>
                     {/* <div className="arrows">

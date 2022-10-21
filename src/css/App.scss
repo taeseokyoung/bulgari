@@ -1,5 +1,9 @@
 @use 'common';
 
+.Wrapper {
+    outline: 1px solid #f00;
+}
+
 .Header {
     position: relative;
     line-height: 100px;
@@ -219,6 +223,7 @@
         }
 
         .right {
+
             position: absolute;
             top: 0;
             right: 0;
@@ -229,7 +234,7 @@
                 div {
 
                     &:nth-child(1) {
-                        padding: 0 0 15px 0;
+                        margin: 0 0 15px 0;
 
                         // figure {
                         //     &:nth-child(1) {
@@ -240,74 +245,79 @@
                     }
 
                     &:nth-child(2) {
-                        padding: 15px 0 0 0;
+                        margin: 15px 0 0 0;
                     }
 
                 }
             }
 
             figure {
-                width: 320px;
-                height: 320px;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                background-color: #fff;
+                img {
+                    width: 320px;
+                    height: 325px;
+                    margin: 1.5px 0 0 0;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-color: #fff;
+                }
+
+
             }
         }
 
-        .bz01 {
-            background: url(../../public/assets/img/bz01.png);
-        }
+        // .bz01 {
+        //     background: url(../../public/assets/img/bz01.png);
+        // }
 
-        .bz02 {
-            background: url(../../public/assets/img/bz03.png);
-        }
+        // .bz02 {
+        //     background: url(../../public/assets/img/bz03.png);
+        // }
 
-        .bz03 {
+        // .bz03 {
 
-            background: url(../../public/assets/img/bz04.png);
-        }
+        //     background: url(../../public/assets/img/bz04.png);
+        // }
 
-        .bz04 {
-            background: url(../../public/assets/img/bz02.png);
-        }
+        // .bz04 {
+        //     background: url(../../public/assets/img/bz02.png);
+        // }
 
-        .se01 {
+        // .se01 {
 
-            background: url(../../public/assets/img/se01.png);
-        }
+        //     background: url(../../public/assets/img/se01.png);
+        // }
 
-        .se02 {
-            background: url(../../public/assets/img/se02.png);
-        }
+        // .se02 {
+        //     background: url(../../public/assets/img/se02.png);
+        // }
 
-        .se03 {
+        // .se03 {
 
-            background: url(../../public/assets/img/se03.png);
-        }
+        //     background: url(../../public/assets/img/se03.png);
+        // }
 
-        .se04 {
-            background: url(../../public/assets/img/se04.png);
-        }
+        // .se04 {
+        //     background: url(../../public/assets/img/se04.png);
+        // }
 
-        .diva01 {
+        // .diva01 {
 
-            background: url(../../public/assets/img/diva01.png);
-        }
+        //     background: url(../../public/assets/img/diva01.png);
+        // }
 
-        .diva02 {
-            background: url(../../public/assets/img/diva02.png);
-        }
+        // .diva02 {
+        //     background: url(../../public/assets/img/diva02.png);
+        // }
 
-        .diva03 {
+        // .diva03 {
 
-            background: url(../../public/assets/img/diva03.png);
-        }
+        //     background: url(../../public/assets/img/diva03.png);
+        // }
 
-        .diva04 {
-            background: url(../../public/assets/img/diva04.png);
-        }
+        // .diva04 {
+        //     background: url(../../public/assets/img/diva04.png);
+        // }
 
         // .arrows {
         //     position: relative;
