@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bulgari/static/css/main.2d83f258.css",
-    "main.js": "/bulgari/static/js/main.b6ed44fc.js",
+    "main.css": "/bulgari/static/css/main.92cab2cd.css",
+    "main.js": "/bulgari/static/js/main.c3ac571f.js",
     "static/media/main03.jpg": "/bulgari/static/media/main03.ce5cf96dc3a88ce7f935.jpg",
     "static/media/main02.jpg": "/bulgari/static/media/main02.8ed04b26a0be77df3739.jpg",
     "static/media/collection02.png": "/bulgari/static/media/collection02.1322ddbb45e9399e3afc.png",
@@ -14,38 +14,26 @@
     "static/media/high02.jpg": "/bulgari/static/media/high02.2fe7584896572effc8b2.jpg",
     "static/media/eden01.jpg": "/bulgari/static/media/eden01.eed1acec7d7954aaf368.jpg",
     "static/media/high03.jpg": "/bulgari/static/media/high03.1df838b9d23a0f2beba6.jpg",
-    "static/media/diva04.png": "/bulgari/static/media/diva04.4e695a885e61693a888e.png",
-    "static/media/se03.png": "/bulgari/static/media/se03.f868ee383afd3efe13cc.png",
-    "static/media/bz02.png": "/bulgari/static/media/bz02.ae24c5853510cb72eace.png",
-    "static/media/diva03.png": "/bulgari/static/media/diva03.616eb93b062758c5a631.png",
-    "static/media/se01.png": "/bulgari/static/media/se01.f7bc97c7052aedcbefa4.png",
     "static/media/i06.jpg": "/bulgari/static/media/i06.7747399ad5d06ada7141.jpg",
     "static/media/eden02.jpg": "/bulgari/static/media/eden02.5137f0a176df7df62423.jpg",
     "static/media/ico05.png": "/bulgari/static/media/ico05.de50f364ca5e8475a95f.png",
-    "static/media/bz03.png": "/bulgari/static/media/bz03.2b154dbea1c0b2bcd530.png",
     "static/media/ico03.png": "/bulgari/static/media/ico03.220e93e2fcd95bc4cfa6.png",
     "static/media/h02.jpg": "/bulgari/static/media/h02.6034f1cbc6ad95c1832d.jpg",
-    "static/media/bz01.png": "/bulgari/static/media/bz01.0c03221f861deff6cda5.png",
     "static/media/h01.jpg": "/bulgari/static/media/h01.06cf6639c7bcd6d5dba5.jpg",
-    "static/media/diva02.png": "/bulgari/static/media/diva02.3ec517cdbccafd1c3433.png",
     "static/media/h03.jpg": "/bulgari/static/media/h03.2e1d05e3d1010e545d5c.jpg",
     "static/media/ico01.png": "/bulgari/static/media/ico01.b7dbc62d61e1a291bd5b.png",
-    "static/media/se04.png": "/bulgari/static/media/se04.e0a11141b744d95e73db.png",
     "static/media/ico04.png": "/bulgari/static/media/ico04.9a8ab06e0fdba2c1b7b0.png",
-    "static/media/bz04.png": "/bulgari/static/media/bz04.5e74b4423ecb1b4ced71.png",
     "static/media/i02.jpg": "/bulgari/static/media/i02.208fba9203aeb3afb5df.jpg",
-    "static/media/se02.png": "/bulgari/static/media/se02.7f45692dc60de89baaee.png",
     "static/media/i04.jpg": "/bulgari/static/media/i04.5fcf157bf3d26d4ca2cb.jpg",
-    "static/media/diva01.png": "/bulgari/static/media/diva01.45690d64390a0bae91fc.png",
     "static/media/i01.jpg": "/bulgari/static/media/i01.79d9e095dc752855602b.jpg",
     "static/media/i03.jpg": "/bulgari/static/media/i03.cde2f388e2fc91dc2cd1.jpg",
     "static/media/i05.jpg": "/bulgari/static/media/i05.829d52f7bae4cd846cf3.jpg",
     "index.html": "/bulgari/index.html",
-    "main.2d83f258.css.map": "/bulgari/static/css/main.2d83f258.css.map",
-    "main.b6ed44fc.js.map": "/bulgari/static/js/main.b6ed44fc.js.map"
+    "main.92cab2cd.css.map": "/bulgari/static/css/main.92cab2cd.css.map",
+    "main.c3ac571f.js.map": "/bulgari/static/js/main.c3ac571f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d83f258.css",
-    "static/js/main.b6ed44fc.js"
+    "static/css/main.92cab2cd.css",
+    "static/js/main.c3ac571f.js"
   ]
 }
