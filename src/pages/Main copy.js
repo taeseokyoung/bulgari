@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState, useParams } from 'react';
-import { Link } from 'react-router-dom';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import MainVisual from '../components/MainVisual';
+// import { useEffect, useRef, useState, useParams } from 'react';
+// import { Link } from 'react-router-dom';
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import MainVisual from '../components/MainVisual';
 
 
 const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
@@ -26,39 +26,43 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
         <main>
             <MainVisual />
             <section className='Iconic csp'>
-                <p>시대의 아이콘, 불가리</p>
-                <h2 className='eng'>BULGARI ICON</h2>
                 <div className="inner">
-                    <Link to="/Type/브레이슬릿">
-                        {/* <Link to="/Type/bracelet"> */}
-                        <figure className='ico01'>
-                            <span>브레이슬릿</span>
-                        </figure>
-                    </Link>
-                    <Link to="/Type/네크리스">
-                        {/* <Link to="/Type/necklace"> */}
-                        <figure className='ico02'>
-                            <span>네크리스</span>
-                        </figure>
-                    </Link>
-                    <Link to="/Type/링">
-                        {/* <Link to="/Type/ring"> */}
-                        <figure className='ico03'>
-                            <span>링</span>
-                        </figure>
-                    </Link>
-                    <Link to="/Type/이어링">
-                        {/* <Link to="/Type/earring"> */}
-                        <figure className='ico04'>
-                            <span>이어링</span>
-                        </figure>
-                    </Link>
-                    <Link to="/Type/워치">
-                        {/* <Link to="/Type/watch"> */}
-                        <figure className='ico05'>
-                            <span>워치</span>
-                        </figure>
-                    </Link>
+                    <p>시대의 아이콘, 불가리</p>
+                    <h2 className='eng'>BULGARI ICON</h2>
+                    {/* <figure className="ico">
+                        <img className='ico ico01'></img>
+                    </figure>
+                    <figure className="ico">
+                        <img className='ico ico02'></img>
+                    </figure>
+                    <figure className="ico">
+                        <img className='ico ico03'></img>
+                    </figure>
+                    <figure className="ico">
+                        <img className='ico ico04'></img>
+                    </figure>
+                    <figure className="ico">
+                        <img className='ico ico05'></img>
+                    </figure> */}
+                    <Slider
+                        // autoplay={false}
+                        slidesToShow={5}>
+                        {
+                            ICONIC.map((el, idx) => {
+                                return (
+                                    <figure key={el.id} className={`ico ico0${idx + 1}`}>
+                                        {/* <a href={`/Type/ + ${el.id}`} target="_blank">{el.title}</a> */}
+                                        <a href={"/Type/" + el.title} target="_blank">{el.title}</a>
+                                    </figure>
+                                    //  <figure key={el.id} className={`ico ico0${idx + 1}`}><Link to={'/Type/'}>
+                                    //     {el.title}
+                                    // </Link>
+                                    // </figure>
+                                )
+                            })
+                        }
+
+                    </Slider>
                 </div>
             </section>
             <section className='Collection csp'>
@@ -80,8 +84,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                                             <div className="box">
                                                 <strong>{el.title}</strong>
                                                 <p>{el.des}</p>
-                                                <a href={"/Collection/" + el.link}>{el.button}</a>
-                                                {/* <button>{el.button}</button> */}
+                                                <button>{el.button}</button>
                                             </div>
                                         </figure>
                                     )
@@ -166,4 +169,4 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
     )
 }
 
-export default Main;
+// export default Main;

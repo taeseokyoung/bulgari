@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const FOOTDATA = [
     {
@@ -78,6 +79,19 @@ const Footer = () => {
                     )
                 }
             </ul>
+
+            <div className="copyright inner">
+                <div className="left">
+                    &copy; 2022. BULGARI all rights reserved.
+                </div>
+                <div className="right">
+                    베송지: 한국
+                    {/* <IoIosArrowDown /> */}
+                    <MdKeyboardArrowDown />
+                </div>
+
+            </div>
+
             {/* <div className="bottom">
                 &copy;
             </div> */}

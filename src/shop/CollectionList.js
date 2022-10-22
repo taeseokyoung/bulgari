@@ -1,15 +1,14 @@
 import { Link, useParams } from 'react-router-dom';
 
-const ProductList = ({ PRODUCT }) => {
-    const { cate } = useParams();
-    const cateList = PRODUCT.filter(it => cate === it.category)
+const CollectionList = ({ PRODUCT }) => {
+    const { collection } = useParams();
+    const collectionList = PRODUCT.filter(it => collection === it.collection)
 
     return (
         <section className='ShopList cate'>
-            <figure className='high01'></figure>
-            <h2>{cate}</h2>
+            <h2>{collection}</h2>
             <ul className='list'>
-                <li>total: product : {cateList.length}</li>
+                <li>total: product : {collectionList.length}</li>
                 <li className='line'></li>
                 <li>
                     <ul className='option'>
@@ -19,10 +18,11 @@ const ProductList = ({ PRODUCT }) => {
                         <li>인기상품</li>
                     </ul>
                 </li>
+
             </ul>
             <div className="inner">
                 {
-                    cateList.map(el => {
+                    collectionList.map(el => {
                         return (
                             <figure key={el.id}>
                                 <Link to={'/Itm/' + el.id}>
@@ -42,4 +42,4 @@ const ProductList = ({ PRODUCT }) => {
     )
 }
 
-export default ProductList;
+export default CollectionList;

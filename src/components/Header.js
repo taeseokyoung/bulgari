@@ -12,9 +12,7 @@ const Header = ({ PRODUCT }) => {
             <div className="gnb">
                 <div className="hInner">
                     <h1 className='on'>
-                        <Link to="/">
-
-                        </Link>
+                        <Link to="/">bulgari main</Link>
                     </h1>
                     <nav>
                         <Nav PRODUCT={PRODUCT} />

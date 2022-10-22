@@ -8,9 +8,11 @@ import Footer from './components/Footer';
 import Main from './pages/Main';
 import History from './pages/History';
 import HighJewelry from './pages/HighJewelry';
-import ProductList from './shop/ProductList';
 import Product from './shop/Product';
+import ProductList from './shop/ProductList';
+import CollectionList from './shop/CollectionList';
 import TypeList from './shop/TypeList';
+
 import { HISTORY, ICONIC, COLLECTION, PRODUCT } from './data/common'
 
 
@@ -25,6 +27,7 @@ function App() {
         <Route path='/highjewelry' element={<HighJewelry />}></Route>
         <Route path='/List/:cate' element={<ProductList PRODUCT={PRODUCT} />}></Route>
         <Route path='/Type/:type' element={<TypeList PRODUCT={PRODUCT} />}></Route>
+        <Route path='/Collection/:collection' element={<CollectionList PRODUCT={PRODUCT} />}></Route>
         <Route path='/Itm/:itm' element={<Product PRODUCT={PRODUCT} />}></Route>
       </Routes>
       <Footer />
