@@ -8,7 +8,6 @@ const Nav = ({ PRODUCT }) => {
         <ul>
             <li><Link to='/brand'>불가리</Link></li>
             <li><Link to='/highjewelry'>하이주얼리</Link></li>
-
             {
                 NavCategory.map(el => {
                     return <li key={el.id}><Link to={'/List/' + el.category}>

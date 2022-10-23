@@ -1,8 +1,34 @@
 import { Link, useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const ProductList = ({ PRODUCT }) => {
+
+
     const { cate } = useParams();
     const cateList = PRODUCT.filter(it => cate === it.category)
+
+    const [sortList, onSortList] = useState(cateList)
+
+    const rowPrice = [...sortList].sort(
+        (a, b) => (a.price - b.price)
+    );
+    const hiPrice = [...sortList].sort(
+        (a, b) => (b.price - a.price)
+    );
+    const newProduct = [...sortList].sort(
+        (a, b) => (b.id - a.id)
+    );
+    const inkki = [...sortList].sort(
+        (a, b) => (b.name.length - a.name.length)
+    );
+
+    const newSort = (it) => {
+        onSortList(it)
+    }
+
+    // useEffect(() => {
+    //     sortList()
+    // }, [newSort])
 
     return (
         <section className='ShopList cate'>
@@ -13,16 +39,16 @@ const ProductList = ({ PRODUCT }) => {
                 <li className='line'></li>
                 <li>
                     <ul className='option'>
-                        <li>신상품</li>
-                        <li>낮은가격</li>
-                        <li>높은가격</li>
-                        <li>인기상품</li>
+                        <li onClick={() => { newSort(rowPrice) }}>낮은가격</li>
+                        <li onClick={() => { newSort(hiPrice) }}>높은가격</li>
+                        <li onClick={() => { newSort(newProduct) }} >신상품</li>
+                        <li onClick={() => { newSort(inkki) }}>인기상품</li>
                     </ul>
                 </li>
-            </ul>
+            </ul >
             <div className="inner">
                 {
-                    cateList.map(el => {
+                    sortList.map(el => {
                         return (
                             <figure key={el.id}>
                                 <Link to={'/Itm/' + el.id}>

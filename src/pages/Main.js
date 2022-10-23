@@ -70,6 +70,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                     <div className="left">
                         <Slider
                             autoplay={true}
+                            autoplaySpeed={4000}
                             ref={LS}
                             asNavFor={RSS}
                             arrows={false}>
@@ -80,7 +81,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                                             <div className="box">
                                                 <strong>{el.title}</strong>
                                                 <p>{el.des}</p>
-                                                <a href={"/Collection/" + el.link}>{el.button}</a>
+                                                <a href={"bulgari/Collection/" + el.link}>{el.button}</a>
                                                 {/* <button>{el.button}</button> */}
                                             </div>
                                         </figure>
@@ -93,6 +94,7 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                         <Slider
                             ref={RS}
                             autoplay={true}
+                            autoplaySpeed={4000}
                             asNavFor={LSS}
                             arrows={false}
                             slidesPerRow={2}
