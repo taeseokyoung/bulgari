@@ -24,11 +24,11 @@ const ProductList = ({ PRODUCT }) => {
 
     const newSort = (it) => {
         onSortList(it)
-    }
+    };
 
-    // useEffect(() => {
-    //     sortList()
-    // }, [newSort])
+    useEffect(() => {
+        onSortList(cateList)
+    }, [cate]);
 
     return (
         <section className='ShopList cate'>
