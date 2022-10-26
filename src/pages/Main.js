@@ -81,7 +81,9 @@ const Main = ({ ICONIC, COLLECTION, PRODUCT }) => {
                                             <div className="box">
                                                 <strong>{el.title}</strong>
                                                 <p>{el.des}</p>
-                                                <a href={"bulgari/Collection/" + el.link}>{el.button}</a>
+                                                <Link to={"/Collection/" + el.link}>
+                                                    <button>{el.button}</button>
+                                                </Link>
                                                 {/* <button>{el.button}</button> */}
                                             </div>
                                         </figure>
